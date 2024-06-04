@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <title>Sorgbearbetning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div class="menu-toggle" id="mobile-menu">
+      &#9776;
+    </div>
+    <div class="logo-container">
+      <a href="home.html">
+        <img src="images/loggany.png" alt="Logo" class="logo">
+      </a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="tjanster.html">Tjänster</a></li>
+        <li><a href="sorg.html">Om sorg</a></li>
+        <li><a href="om.html">Om mig</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="menu-btn">Boka gratis samtal</a>
+  </header>
+
+  <script>
+  const menuToggle = document.getElementById('mobile-menu');
+  const navLinks = document.querySelector('.nav-links');
+  const menuBtn = document.querySelector('.menu-btn');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuBtn.classList.toggle('active');
+  });
+  </script>
+
+  <main>
+    <div class="get-started">
+      <div class="content">
+
+        <h3>Tjänster<br>
+        </h3>
+
+          <p>Jag hjälper dig ur din känslomässiga smärta efter stora livsförändringar.<br>
+            Med en konkret metod ger jag dig kunskap och verktyg<br> för
+            att läka din smärta och gå vidare. <br>Är du redo att släppa taget?</p>
+
+            <a href="#" class="button-get-started">Jag vill veta mer</a>
+          </div>
+        </div>
+
+        <div style="position: relative;">
+          <div class="container-grid-articles">
+            <div class="grid-articles">
+              <article>
+                <h3>Känner du igen dig?</h3>
+                <p>
+                  <span class="dot"> • </span>Orkeslös, ingen energi<br>
+                  <span class="dot"> • </span>Svårt att koncentrera dig<br>
+                  <span class="dot"> • </span>Nedstämd, ångest, utmattningssymtom<br>
+                  <span class="dot"> • </span>Ensam, har ingen att prata med<br>
+                  <span class="dot"> • </span>Ingen förstår vad du går igenom<br>
+                  <span class="dot"> • </span>Svårt att sova<br>
+                  <span class="dot"> • </span>Lindrar smärtan med mat, alkohol, shopping, etc.<br>
+                  <span class="dot"> • </span>Värk i kroppen<br>
+                  <span class="dot"> • </span>Plötsliga ilskeutbrott eller gråtanfall<br>
+                  <span class="dot"> • </span>Vet inte vad du ska göra för att må bättre?
+                </p>
+              </article>
+              <article>
+                <h3>Vill du istället?</h3>
+                <p>
+                  <span class="dot"> • </span>Vakna utvilad fylld av energi<br>
+                  <span class="dot"> • </span>Känna glädje och livslust<br>
+                  <span class="dot"> • </span>Vara avslappnad, lugn och rofylld<br>
+                  <span class="dot"> • </span>Sluta älta det förflutna och släppa taget<br>
+                  <span class="dot"> • </span>Vara omgiven av stödjande människor<br>
+                  <span class="dot"> • </span>Känna dig hörd och förstådd<br>
+                  <span class="dot"> • </span>Inte tröstäta, mat, alkohol, shopping mm<br>
+                  <span class="dot"> • </span>Kunskap hur du ska hantera dina svåra känslor<br>
+                  <span class="dot"> • </span>Få verktyg för att hantera alla slags förändringar i livet<br>
+                  <span class="dot"> • </span>Må bra inom dig!
+                </p>
+              </article>
+            </div>
+            <h3 class="headline-grid-articles">Då är detta något för dig!</h3>
+          </div>
+          <div class="custom-shape-divider-bottom-1715809508">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+          </div>
+        </div>
+
+        <div style="position: relative;">
+          <div class="grid-options">
+            <article>
+              <img src="images/icon-collaboration.svg" alt="icon-collaboration">
+
+              <h3><a href="#" class="h3-link">Kurs i grupp</a></h3>
+
+              <p>Har du varit med om en förändring eller förlust i livet som påverkar dig?
+                Känner du dig ensam i sorgen? I grupp får du möjlighet att prata om sorgen tillsammans med
+                andra likasinnade. Det finns en styrka i att vi inte är ensamma med vår sorg.
+                Jag guidar dig med en konkret metod som stegvis ger dig kunskap,
+                redskap och känslomässig läkning. Även om du arbetar i grupp tar
+                jag hänsyn till din sorg och dina behov.</p>
+
+              </article>
+              <article>
+                <img src="images/icon-any-file.svg" alt="icon-any-file">
+
+                <h3><a href="#" class="h3-link">Indivduell kurs</a></h3>
+
+                <p>När du ofta tänker på vad du varit med om och låter det hindra
+                  dig från att leva som du vill, när du vill släppa taget och gå
+                  vidare. När du vill ha samtalsstöd för att hantera den nya livssituationen.
+                  Det kan gälla en separation, att du förlorat en närstående, sjukdom,
+                  ett jobb eller vad som helst. På ett personligt sätt hjälper jag dig genom
+                  metoden,
+                  steg för steg, utifrån din sorg och dina behov.</p>
+                </article>
+                <article>
+                  <img src="images/icon-any-file.svg" alt="icon-any-file">
+
+                  <h3><a href="tjanster.html" class="h3-link">Samtal</a></h3>
+
+                  <p>Senaste Att våga känna känslor är inte alltid så lätt.
+                    Många stänger in sina jobbiga känslor och flyr in i något annat såsom mat,
+                    alkohol, träning, sociala medier, arbete etc. Plötsligt händer något
+                    som påminner om den smärtsamma händelsen och de negativa känslorna kommer
+                    tillbaka. Jag är certifierad handledare i sorgbearbetning och jobbar med
+                    att hjälpa människor att komma vidare med hjälp av stödjande, läkande samtal.</p>
+                  </article>
+                </div>
+                <div class="custom-shape-divider-bottom-1717281292">
+                  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="stay-productive">
+                <img src="images/profile.jpeg" alt="illustration-stay-productive" class="stay-prodcutive-image">
+
+                <div class="text">
+                  <h2>Jag är Anna</h2>
+
+                  <p>Jag vet hur det är att känna smärta. Jag har upplevt många olika förluster i mitt liv.
+                    En av de allra tyngsta var min dotters olycka när hon var två år.
+                    Efteråt ville jag kunna släppa taget och bli glad igen, men visste inte hur?<br><br>
+
+                    Genom att prata om mina förluster fick jag distans till det som hade hänt, men plötsligt
+                    hände något som påminde mig om händelsen och jag kastades tillbaka in i smärtan<br><br>
+
+                    Tillslut kom jag i kontakt med metoden för sorgbearbetning och det
+                    förändrade mitt liv. Nu brinner jag för att ge andra det jag har fått.
+                    Jag älskar att arbeta som certifierad handledare i sorgbearbetning.<br><br>
+
+                    Sorg beror på ett brustet hjärta, inte en trasig hjärna.
+                    Sorgbearbetning fokuserar på och hanterar känslorna.
+                    Därför fungerar denna metod.</p>
+
+                    <a href="om.html" class="button-stay-productive">Mer om mig</a>
+                  </div>
+                </div>
+
+                <div style="position: relative;">
+                  <div class="quotes">
+
+                    <div class="container">
+                      <p>Jag var lite rädd innan kursen att dela med mig av så personliga och
+                        känslomässiga händelser.  Men Anna är så varm, lugn och kompetent att jag
+                        kände mig helt trygg. Det var otroligt värdefullt att hon delade med sig av
+                        sina personliga erfarenheter genom hela kursen. Kan starkt rekommendera Anna!.</p>
+
+                        <div class="person">
+                          <p class="name">Camilla, Malmö</p>
+
+                        </div>
+                      </div>
+
+                      <div class="container">
+                        <p>Kursen har varit guld värd. Anna gjorde mig så trygg att jag klarade av att ta itu
+                          med alla känslor. Det är fokus på känslorna, vilket var jätteviktigt för mig som har
+                          så svårt med känslor. Anna är tydlig, empatisk och stöttande. Hon dömer aldrig utan ger
+                          enbart kärlek och förståelse</p>
+                          <div class="person">
+                            <p class="name">Marika, Malmö</p>
+                          </div>
+                        </div>
+
+                        <div class="container">
+                          <p>Anna är otroligt varm och empatisk. På ett personligt sätt guidade hon oss genom metoden,
+                            steg för steg, på ett tryggt sätt. Att lyssna och prata med de andra i gruppen gjorde
+                            att jag vågade öppna mig om min sorg.Anna är fantastisk och genuin. Jag önskar att alla skulle
+                            få möjlighet att göra detta med henne.</p>
+
+                            <div class="person">
+                              <p class="name">Mia, Malmö </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </main>
+
+                    <div class="early-access-card">
+                      <h2>Skriv upp dig för mitt nyhetsbrev om livsförändringar!</h2>
+
+                      <p>Du får nya kunskaper, insikter och tips för att bättre hantera smärtsamma händelser i livet</p>
+
+                      <div class="email-form">
+                        <input type="text" placeholder="För och efternamn">
+                        <input type="text" placeholder="email@example.com">
+                      </div>
+                      <a href="#" class="early-btn">Boka gratis samtal</a>
+                    </div>
+
+                    <footer>
+                      <div class="column">
+                        <a href="#" class="footer-image"><img src="images/logga(1).png" alt="Image"></a>
+                        <p>Anna certifierad handledare <br>i sorgbearbetning<br><br>
+                          sorgbearbetning@gmail.com<br><br>
+                          072-2222832</p>
+                        </div>
+                        <div class="column">
+                          <h3><a href="kontakt.html" class="headline-link">Kontakt</a></h3>
+                          <h3><a href="#" class="headline-link">Boka samtal</a></h3>
+                          <h3><a href="tjanster.html" class="headline-link">Tjänster</a></h3>
+                          <h3><a href="om.html" class="headline-link">Om mig</a></h3>
+                          <h3><a href="#" class="headline-link">Villkor</a></h3>
+                        </div>
+                        <div class="column">
+                          <h3>Följ mig på instagram och facebook</h3>
+                          <div class="social-icons">
+                            <a href="#"><img src="images/facebook (1).png" alt="Facebook"></a>
+                            <a href="#"><img src="images/instagram (1).png" alt="Instagram"></a>
+                          </div>
+                        </div>
+                        <div class="column">
+                          <h3>Läker tiden alla sår?</h3>
+                          <p>Nej, det är vad du gör under tiden som avgör om du läker såret.
+                            Gör du ingen förändring så förändras heller inget!
+                          </p>
+                          <h3>Är du redo att gå vidare med ditt liv?</h3>
+                          <a href="#" class="footer-btn">Boka ett gratis samtal med Anna</a>
+                        </div>
+                      </footer>
+
+                    </body>
+
+                    </html>
