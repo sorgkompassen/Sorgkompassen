@@ -156,9 +156,9 @@ button:focus{
 }
 .grid-articles > article {
 	margin-top: 50px;
-	padding-right: 50px;
-	padding-left: 100px;
 	margin-bottom: 20px;
+	padding-right: 30px;
+	padding-left: 20px;
 	text-align: left;
 }
 .headline-grid-articles{
@@ -290,6 +290,14 @@ button:focus{
 }
 .button-stay-productive:hover {
     color: blue; /* Color on hover */
+}
+@media (max-width: 1000px){
+	.stay-productive{
+		grid-template-columns: repeat(3, 40vw);
+	}
+	.grid-options > article{
+		padding-right: 40px;
+	}
 }
 
 .quotes{
@@ -522,37 +530,44 @@ footer > .social-icons a {
 	}
 
 	.content > h3{
-		font-size: 1em;
+		font-size: 1.2em;
 		width: 100%;
 		margin-top: 100px;
 		margin-bottom: 10px;
+		font-style: italic;
+		font-weight: bold;
 	}
 
 	.grid-articles{
-		grid-template-columns: 80%;
+		grid-template-columns: 100%;
 		display: grid;
-		grid-template-rows: repeat(2, 500px);
+		grid-template-rows: repeat(2, 350px);
 		row-gap: 10px;
 		width: 100%;
 		margin: 0 auto;
 		align-items: center;
-		margin-bottom: 20px;
+		text-align: center;
+		padding: 0px;
 	}
-	.grid-articles > article > img{
-		width: auto;
-		height: 30%;
+	.grid-articles > article {
+		margin-top: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
+		margin-bottom: 0px;
+		text-align: left;
 	}
 	.grid-articles > article > h3{
 		font-size: 1.3em;
 		font-weight: 100;
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 	}
+
 
 	.grid-options{
 		grid-template-columns: 80%;
 		display: grid;
-		grid-template-rows: repeat(3, 450px);
+		grid-template-rows: repeat(3, 520px);
 		row-gap: 20px;
 		width: 100%;
 		margin: 0 auto;
