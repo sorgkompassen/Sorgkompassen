@@ -22,6 +22,10 @@ p{
 	font-weight: 400;
 }
 
+strong {
+	font-weight: bold;
+}
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -106,13 +110,16 @@ main > *{
 }
 .content{
 	text-align: center;
-	margin-right: 610px;
+	margin-right: 50%;
 	margin-left: 20px;
 }
-.content > h3{
+.content > h2{
 	width: 90%;
-	margin-top: 150px;
-	margin-bottom: 80px;
+	margin-top: 100px;
+	margin-bottom: 90px;
+}
+.content > h3{
+	font-size: 1.3em;
 }
 .button-get-started {
 	display: inline-block;
@@ -134,19 +141,25 @@ main > *{
 	background-size: cover;
 	background-position: center;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	color: white;
 }
 .content-tjanster{
 	text-align: center;
-	margin-right: 610px;
-	margin-left: 20px;
+	padding: 20px;
+	border-radius: 8px;
+	max-width: 400px;
+	width: 100%;
+	background-color: lightgreen;
+	margin-left: 15%;
+}
+.content-tjanster > h2{
+	width: 90%;
+	margin-bottom: 50px;
 }
 .content-tjanster > h3{
-	width: 90%;
-	margin-top: 150px;
-	margin-bottom: 80px;
+	font-size: 1.3em;
 }
 
 .get-started-sorg{
@@ -164,11 +177,15 @@ main > *{
 	margin-right: 610px;
 	margin-left: 20px;
 }
-.content-sorg > h3{
+.content-sorg > h2{
 	width: 90%;
-	margin-top: 150px;
-	margin-bottom: 80px;
+	margin-top: 100px;
+	margin-bottom: 90px;
 }
+.content-sorg > h3{
+	font-size: 1.3em;
+}
+
 
 .get-started-om{
 	height: 800px;
@@ -176,9 +193,25 @@ main > *{
 	background-size: cover;
 	background-position: center;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	color: white;
+}
+.content-om{
+	text-align: center;
+	padding: 20px;
+	border-radius: 8px;
+	max-width: 500px;
+	width: 100%;
+	background-color: lightgreen;
+	margin-left: 15%;
+}
+.content-om > h2{
+	width: 90%;
+	margin-bottom: 50px;
+}
+.content-om > h3{
+	font-size: 1.3em;
 }
 
 .valkommen {
@@ -206,7 +239,6 @@ main > *{
 	justify-content: center;
 	width: 100%;
 	background-color: rgb(242, 237, 232);
-	padding: 20px;
 	text-align: center;
 	margin: 0 auto;
 }
@@ -347,7 +379,6 @@ main > *{
 .grid-articles-sorg > article {
 	margin-top: 50px;
 	margin-bottom: 70px;
-	padding-right: 20px;
 	padding-left: 50px;
 	text-align: left;
 }
@@ -362,19 +393,17 @@ main > *{
 		padding-right: 50px;
 	}
 }
+body, html {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden; /* Prevent horizontal overflow */
+}
 
 .container-grid-articles-om{
-	background-color: white;
+	background-color: rgb(242, 237, 232);
+	margin-top: -30px;
 }
 .container-grid-articles-om > h2{
-	margin-bottom: 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-}
-.container-grid-articles-om > h3{
 	margin-bottom: 20px;
 	display: flex;
 	flex-direction: column;
@@ -513,13 +542,25 @@ main > *{
 	height: 7rem;
 	width: auto;
 }
-.h3-link {
+.button-container {
+	text-align: center; /* Centers the button horizontally */
+	position: relative; /* Allows z-index to take effect */
+	z-index: 10;
+	padding-bottom: 50px;
+}
+.centered-button {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 20px;
+	background-color: rgb(75, 167, 184);
+	color: white;
 	text-decoration: none;
-	color: inherit; /* Keeps the link color the same as the heading color */
+	border-radius: 20px;
 }
-.h3-link:hover {
-	color: #007bff; /* Color on hover */
+.centered-button:hover {
+	color: rgb(0, 123, 203); /* Color on hover */
 }
+
 .grid-options-h3{
 	display: flex;
 	flex-direction: column;
@@ -616,6 +657,13 @@ main > *{
 	margin-bottom: 30px;
 	width: 60%;
 }
+.button-container-tjanser {
+	text-align: center;
+	position: relative;
+	padding-bottom: 50px;
+	background-color: rgb(242, 237, 232);
+	z-index: 10;
+}
 
 .custom-shape-divider-bottom-1717281292 {
 	position: absolute;
@@ -661,6 +709,8 @@ main > *{
 }
 .stay-productive > .text > p{
 	font-weight: 100;
+	text-align: left; /* Ensure the text is left-aligned */
+	line-height: 1.6; /* Adjust line height for readability */
 }
 .button-stay-productive {
 	display: inline-block;
@@ -680,6 +730,36 @@ main > *{
 	}
 	.grid-options > article{
 		padding-right: 40px;
+	}
+}
+
+.stay-productive-sorg{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	box-sizing: border-box;
+	background-color: white;/*bakgrundfärg jag är anna*/
+	flex-wrap: wrap;
+}
+.stay-productive-sorg > .text-sorg{
+	flex: 0 0 50%;
+	max-width: 50%;
+	margin-left: 5%;
+}
+.stay-productive-sorg > .text-sorg > h2{
+	margin-top: 20px;
+}
+.stay-productive-sorg > .text-sorg > p{
+	font-weight: 100;
+	text-align: left; /* Ensure the text is left-aligned */
+	line-height: 1.6; /* Adjust line height for readability */
+}
+@media (max-width: 1000px){
+	.stay-productive-sorg{
+		grid-template-columns: repeat(3, 40vw);
 	}
 }
 
@@ -813,7 +893,6 @@ main > *{
 .early-btn{
 	color: white;
 	background-color: rgb(75, 167, 184);
-	color: white;
 	border: none;
 	padding: 10px 20px;
 	cursor: pointer;
@@ -875,10 +954,14 @@ footer > a {
 
 footer > .social-icons {
 	display: flex;
+	height: 1rem;
+	width: auto;
 }
 
 footer > .social-icons a {
 	margin-right: 10px;
+	height: 1rem;
+	width: auto;
 }
 
 .footer-btn {
@@ -954,13 +1037,19 @@ footer > .social-icons a {
 		margin-right: 50px;
 	}
 
-	.content > h3{
-		font-size: 1.2em;
+	.content > h2{
+		font-size: 1.5em;
 		width: 100%;
 		margin-top: 100px;
 		margin-bottom: 10px;
 		font-style: italic;
 		font-weight: bold;
+	}
+	.content > h3{
+		font-size: 1em;
+		width: 100%;
+		margin-bottom: 10px;
+		font-style: italic;
 	}
 
 	.get-started-tjanster{
@@ -974,37 +1063,61 @@ footer > .social-icons a {
 		margin-right: 50px;
 	}
 
-	.content-tjanster > h3{
-		font-size: 1.2em;
+	.content-tjanster > h2{
+		font-size: 1.5em;
 		width: 100%;
-		margin-top: 100px;
 		margin-bottom: 10px;
-		font-style: italic;
 		font-weight: bold;
+	}
+	.content-tjanster > h3{
+		font-size: 1em;
+		width: 100%;
+		margin-bottom: 10px;
 	}
 
 	.get-started-sorg{
 		height: 500px;
 	}
-
 	.content-sorg{
 		text-align: left;
 		width: 100%;
 		margin-left: 50px;
 		margin-right: 50px;
 	}
-	
-	.content-sorg > h3{
-		font-size: 1.2em;
+	.content-sorg > h2{
+		font-size: 1.5em;
 		width: 100%;
 		margin-top: 100px;
 		margin-bottom: 10px;
 		font-style: italic;
 		font-weight: bold;
 	}
+	.content-sorg > h3{
+		font-size: 1em;
+		width: 100%;
+		margin-bottom: 10px;
+		font-style: italic;
+	}
 
 	.get-started-om{
 		height: 500px;
+	}
+	.content-om{
+		text-align: left;
+		width: 100%;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.content-om > h2{
+		font-size: 1.5em;
+		width: 100%;
+		margin-bottom: 10px;
+		font-weight: bold;
+	}
+	.content-om > h3{
+		font-size: 1em;
+		width: 100%;
+		margin-bottom: 10px;
 	}
 
 	.grid-articles{
@@ -1059,6 +1172,10 @@ footer > .social-icons a {
 		margin: 0 auto;
 	}
 
+	.container-grid-articles-om{
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
 	.grid-articles-om{
 		grid-template-columns: 100%;
 		display: grid;
@@ -1068,11 +1185,8 @@ footer > .social-icons a {
 		margin: 0 auto;
 		align-items: center;
 		text-align: center;
-		padding-top: 20px;
-		padding-bottom: 50px;
 	}
 	.grid-articles-om > article {
-		margin-top: 20px;
 		padding-right: 20px;
 		padding-left: 20px;
 		margin-bottom: 0px;
@@ -1134,6 +1248,13 @@ footer > .social-icons a {
 		font-weight: 100;
 		width: 90%;
 		margin: 0 auto;
+	}
+
+	.button-container{
+		padding: 10px 20px;
+		width: 90%;
+		height: auto;
+		padding-bottom: 50px;
 	}
 
 	.valkommen{
@@ -1210,6 +1331,26 @@ footer > .social-icons a {
 	}
 	.button-stay-productive{
 		margin-top: 10px;
+	}
+
+	.stay-productive-sorg{
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		padding-bottom: 70px;
+	}
+	.stay-productive-sorg > img{
+		flex: 1 1 100%;
+		max-width: 80%;
+		margin: 0;
+	}
+	.stay-productive-sorg > text-om{
+		margin-top: 20px;
+		max-width: 60%;
+	}
+	.stay-productive-sorg > text-om > h2{
+		max-width: 90%;
+		text-align: left;
 	}
 
 	.stay-productive-om{
