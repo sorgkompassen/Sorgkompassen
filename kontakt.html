@@ -34,43 +34,34 @@
     <a href="#" class="menu-btn">Boka kostnadsfritt samtal</a>
   </header>
 
-  <script>
-  const menuToggle = document.getElementById('mobile-menu');
-  const navLinks = document.querySelector('.nav-links');
-  const menuBtn = document.querySelector('.menu-btn');
-
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    menuBtn.classList.toggle('active');
-  });
-  </script>
-
   <main>
 
-    <div style="position: relative;">
-      <div class="container-grid-articles-kontakt">
+    <div class="container-grid-articles-kontakt">
         <div class="grid-articles-kontakt">
-          <article>
-            <h2>Kontakta mig</h2>
-            <p>
-              Har du några frågor eller vill boka ett gratis samtal med mig? <br>
-              Tveka inte att höra av dig!<br>
-              Vill du boka in en kostnadsfri tid för att prata<br> med mig personligen kan du göra det HÄR
-
-            </p>
-          </article>
-          <article>
-            <div class="email-form-kontakt">
-              <input type="text" placeholder="Namn"><br>
-              <input type="text" placeholder="E-postadress"><br>
-              <input type="text" placeholder="Meddelande"><br>
-            </div>
-            <br>
-            <a href="#" class="early-btn">Skicka meddelande</a>
-          </div>
+            <article class="info-article">
+                <h2>Kontakta mig</h2>
+                <p>
+                    Har du några frågor? Tveka inte att höra av dig! <br><br>
+                    Använd kontaktformuläret eller maila direkt till:<br><br>
+                    sorgkompassen@gmail.com<br><br>
+                    <a href="#" class="button-get-started">Boka kostnadsfritt samtal med Anna</a>
+                </p>
+            </article>
+            <article class="form-article">
+                <form id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Namn" required><br>
+                    <input type="email" id="email" name="email" placeholder="E-postadress" required><br>
+                    <textarea id="message" name="message" placeholder="Meddelande" required></textarea><br>
+                    <p> Jag godkänner lagring av ovanstående uppgifter enligt integritetspolicyn</p>
+                    <button id="send-button-kontakt" type="button" class="early-btn-kontakt">Skicka meddelande</button>
+                </form>
+                <div class="social-icons-kontakt">
+                    <a href="https://www.facebook.com/anna.brkic1?locale=sv_SE"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/sorgkompassen/"><img src="images/insta.png" alt="Instagram"></a>
+                </div>
+            </article>
         </div>
-
-
+    </div>
 
       </main>
 
@@ -110,6 +101,19 @@
             <a href="#" class="footer-btn">Boka kostnadsfritt samtal med Anna</a>
           </div>
         </footer>
+
+        <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        const menuBtn = document.querySelector('.menu-btn');
+
+        menuToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+          menuBtn.classList.toggle('active');
+        });
+        </script>
+
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
       </body>
 
