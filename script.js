@@ -24,16 +24,26 @@ window.onscroll = function() {
     prevScrollPos = currentScrollPos;
 };
 
-emailjs.init("XvCtnf9vApVHPljdT"); // Replace with your API key
+document.addEventListener('DOMContentLoaded', function() {
+  emailjs.init("XvCtnf9vApVHPljdT"); // Replace with your actual API key
 
-// Form submission handler
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-   event.preventDefault(); // Prevent default form submission
+  document.getElementById('send-button').addEventListener('click', function() {
+    // Prevent default form submission
+    event.preventDefault();
 
-   emailjs.sendForm('service_kaxyek7', 'template_8qdhbsg', this)
-      .then(function() {
-         alert('Email sent successfully!');
-      }, function(error) {
-         alert('Failed to send email. Error: ' + error);
-      });
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+
+    emailjs.send("service_kaxyek7", "template_8qdhbsg", {
+      from_name: name,
+      from_email: email
+    })
+    .then(function(response) {
+      console.log('Success:', response);
+      alert('Email sent successfully!');
+    }, function(error) {
+      console.log('Failed:', error);
+      alert('Failed to send email.');
+    });
+  });
 });
