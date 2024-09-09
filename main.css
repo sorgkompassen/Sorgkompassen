@@ -148,10 +148,10 @@ main > *{
 .content-tjanster{
 	text-align: center;
 	padding: 20px;
-	border-radius: 8px;
-	max-width: 400px;
+	border-radius: 10px;
+	max-width: 450px;
 	width: 100%;
-	background-color: lightgreen;
+	background-color: rgb(101, 128, 119, 0.6);
 	margin-left: 15%;
 }
 .content-tjanster > h2{
@@ -200,10 +200,10 @@ main > *{
 .content-om{
 	text-align: center;
 	padding: 20px;
-	border-radius: 8px;
-	max-width: 500px;
+	border-radius: 10px;
+	max-width: 600px;
 	width: 100%;
-	background-color: lightgreen;
+	background-color: rgb(75, 167, 184, 0.6);
 	margin-left: 15%;
 }
 .content-om > h2{
@@ -869,21 +869,13 @@ body, html {
 	z-index: 2;
 	margin-bottom: 20px;
 }
-.early-access-card > .email-form > *{
-	border-radius: 50px;
-	height: 40px;
-	border: 0;
-	outline: none;
-	margin-bottom: 5px;
-}
-.early-access-card > .email-form > input{
-	width: 60%;
-	margin-right: 3%;
-	padding-left: 40px;
-	color: rgba(0, 0, 0, 1);
-}
-.early-access-card > .email-form > input::placeholder{
-	color: rgba(0, 0, 0, 0.4);
+
+.email-form > input{
+	width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 .early-txt{
 	margin-top: 20px;
