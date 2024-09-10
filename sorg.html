@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="script.js"></script>
   <link rel="stylesheet" href="main.css">
-  <title>Sorgbearbetning</title>
+  <title>Sorg</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -33,17 +32,6 @@
     </nav>
     <a href="#" class="menu-btn">Boka kostnadsfritt samtal</a>
   </header>
-
-  <script>
-  const menuToggle = document.getElementById('mobile-menu');
-  const navLinks = document.querySelector('.nav-links');
-  const menuBtn = document.querySelector('.menu-btn');
-
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    menuBtn.classList.toggle('active');
-  });
-  </script>
 
   <main>
     <div class="get-started-sorg">
@@ -253,6 +241,7 @@
                   <h3><a href="tjanster.html" class="headline-link">Tjänster</a></h3>
                   <h3><a href="om.html" class="headline-link">Om mig</a></h3>
                   <h3><a href="villkor.html" class="headline-link">Villkor</a></h3>
+                  <h3><a href="integritet.html" class="headline-link">Integritetspolicy</a></h3>
                 </div>
                 <div class="column">
                   <h3>Följ mig gärna på<br> mina sociala medier</h3>
@@ -270,6 +259,19 @@
                   <a href="#" class="footer-btn">Boka kostnadsfritt samtal med Anna</a>
                 </div>
               </footer>
+
+              <script src="script.js"></script>
+
+              <script>
+              const menuToggle = document.getElementById('mobile-menu');
+              const navLinks = document.querySelector('.nav-links');
+              const menuBtn = document.querySelector('.menu-btn');
+
+              menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                menuBtn.classList.toggle('active');
+              });
+              </script>
 
             </body>
 
