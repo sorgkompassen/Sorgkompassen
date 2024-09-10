@@ -980,8 +980,8 @@ body, html {
 	z-index: 2;
 	margin-bottom: 20px;
 }
-.early-access-card > a{
-	color: blue;
+.early-access-card a {
+    color: rgb(75, 167, 184); /* Färg på instagramlänk */
 }
 
 .email-form > input{
@@ -1450,16 +1450,17 @@ footer > .social-icons a {
 		align-items: center;
 		padding-bottom: 70px;
 	}
-	.stay-productive-sorg > img{
+	.stay-productive-image-sorg{
 		flex: 1 1 100%;
 		max-width: 80%;
 		margin: 0;
+		padding: 0;
 	}
-	.stay-productive-sorg > text-om{
+	.text-sorg{
 		margin-top: 20px;
 		max-width: 90%;
 	}
-	.stay-productive-sorg > text-om > h2{
+	.text-sorg > h2{
 		max-width: 90%;
 		text-align: left;
 	}
@@ -1470,16 +1471,17 @@ footer > .social-icons a {
 		align-items: center;
 		padding-bottom: 70px;
 	}
-	.stay-productive-om > img{
+	.stay-prodcutive-image-om{
 		flex: 1 1 100%;
 		max-width: 80%;
 		margin: 0;
+		padding: 0;
 	}
-	.stay-productive-om > text-om{
+	.text-om{
 		margin-top: 20px;
 		max-width: 90%;
 	}
-	.stay-productive-om > text-om > h2{
+	.text-om > h2{
 		max-width: 90%;
 		text-align: left;
 	}
