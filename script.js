@@ -1,27 +1,17 @@
-
-
 window.addEventListener('scroll', function () {
-    var logoContainer = document.getElementById('logo-container');
+  var logoContainer = document.getElementById('logo-container');
 
-    if (window.scrollY > 50) {
-        logoContainer.classList.add('scrolled');
-    } else {
-        logoContainer.classList.remove('scrolled');
-    }
+
 });
 
 var prevScrollPos = window.pageYOffset;
 
 window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
+  var currentScrollPos = window.pageYOffset;
 
-    if (prevScrollPos > currentScrollPos) {
-        document.getElementById("main-header").classList.remove("nav-up");
-    } else {
-        document.getElementById("main-header").classList.add("nav-up");
-    }
 
-    prevScrollPos = currentScrollPos;
+
+  prevScrollPos = currentScrollPos;
 };
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -71,5 +61,21 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log('Failed:', error);
       alert('Failed to send email.');
     });
+  });
+});
+
+document.querySelectorAll('.faq-question').forEach(question => {
+  question.addEventListener('click', () => {
+    const answer = question.nextElementSibling;
+
+    // Toggle active class on the question
+    question.classList.toggle('active');
+
+    // Toggle the maxHeight for the answer to show/hide
+    if (answer.style.maxHeight) {
+      answer.style.maxHeight = null;
+    } else {
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    }
   });
 });
