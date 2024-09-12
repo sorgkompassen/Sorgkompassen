@@ -1506,23 +1506,32 @@ footer > .social-icons a {
 	.stay-productive-om {
         flex-direction: column; /* Stack image and text vertically */
         text-align: center;
+        padding: 10px; /* Reduce padding for mobile */
+				padding-bottom: 70px;
     }
 
     .stay-productive-image-om {
         flex: 1 1 100%;
-        max-width: 80%;
-				padding: 0px;
-        margin: 0 auto 20px; /* Add some margin below the image */
+        max-width: 90%; /* Make the image take 90% of the width */
+        height: auto;
+        margin: 0 auto 20px; /* Center the image with margin below */
+        padding: 0; /* Remove extra padding */
     }
 
     .text-om {
-        max-width: 90%;
+        max-width: 95%; /* Increase the text width on mobile */
         margin: 0 auto;
+        padding: 0; /* Remove padding */
+        text-align: center; /* Center-align the text */
+    }
+
+    .text-om > h2 {
+        margin: 0 auto 30px;
         text-align: center;
     }
 
-    .text-om > h2{
-        margin: 0 auto 30px;
+    .text-om > p {
+        margin: 0 auto;
         text-align: center;
     }
 
