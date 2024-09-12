@@ -872,12 +872,16 @@ body, html {
     height: auto;
     object-fit: contain;
     margin-right: 5%; /* Add some space between the image and text */
+		padding: 0;
+    display: block; /* Ensure image is block-level */
 }
 
 .text-om {
     flex: 0 0 50%; /* Text container takes 50% of the width */
     max-width: 50%;
     text-align: left; /* Align text to the left on larger screens */
+		margin: 0;
+    padding: 0;
 }
 
 .text-om > h2 {
@@ -1507,22 +1511,22 @@ footer > .social-icons a {
         flex-direction: column; /* Stack image and text vertically */
         text-align: center;
         padding: 10px; /* Reduce padding for mobile */
-				padding-bottom: 70px;
     }
 
     .stay-productive-image-om {
         flex: 1 1 100%;
-        max-width: 90%; /* Make the image take 90% of the width */
+        max-width: 90%; /* Image takes up 90% of width */
         height: auto;
-        margin: 0 auto 20px; /* Center the image with margin below */
-        padding: 0; /* Remove extra padding */
+        margin: 0 auto; /* Remove unnecessary margin */
+        padding: 0; /* Remove padding */
+        display: block; /* Ensure image is block-level */
     }
 
     .text-om {
-        max-width: 95%; /* Increase the text width on mobile */
+        max-width: 95%;
         margin: 0 auto;
-        padding: 0; /* Remove padding */
-        text-align: center; /* Center-align the text */
+        padding: 0;
+        text-align: center;
     }
 
     .text-om > h2 {
