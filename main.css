@@ -1513,6 +1513,7 @@ footer > .social-icons a {
         padding: 10px; /* Adjust padding */
         margin: 0 auto; /* Center the container */
         overflow: hidden; /* Prevent overflow issues */
+				padding-bottom: 70px;
     }
 
     .stay-productive-image-om {
