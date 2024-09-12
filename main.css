@@ -1615,11 +1615,7 @@ footer > .social-icons a {
 		margin-top: 0px;
 	}
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 @keyframes imageFlow{
 	from {transform: translate3d(0, -100%, 0);}
