@@ -855,41 +855,41 @@ body, html {
 }
 
 .stay-productive-om {
-    display: flex;
-    flex-direction: row; /* Image and text side by side */
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: white;
-		padding-bottom: 70px;
+	display: flex;
+	flex-direction: row; /* Image and text side by side */
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: white;
+	padding-bottom: 70px;
 }
 
 .stay-productive-image-om {
-    flex: 0 0 35%; /* Make the image take 35% of the width */
-    max-width: 35%;
-    height: auto;
-    object-fit: contain;
-    margin-right: 5%; /* Add some space between the image and text */
-		padding: 0;
-    display: block; /* Ensure image is block-level */
+	flex: 0 0 35%; /* Make the image take 35% of the width */
+	max-width: 35%;
+	height: auto;
+	object-fit: contain;
+	margin-right: 5%; /* Add some space between the image and text */
+	padding: 0;
+	display: block; /* Ensure image is block-level */
 }
 
 .text-om {
-    flex: 0 0 50%; /* Text container takes 50% of the width */
-    max-width: 50%;
-    text-align: left; /* Align text to the left on larger screens */
-		margin: 0;
-    padding: 0;
+	flex: 0 0 50%; /* Text container takes 50% of the width */
+	max-width: 50%;
+	text-align: left; /* Align text to the left on larger screens */
+	margin: 0;
+	padding: 0;
 }
 
 .text-om > h2 {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .text-om > p {
-    font-weight: 100;
+	font-weight: 100;
 }
 
 
@@ -1508,39 +1508,39 @@ footer > .social-icons a {
 	}
 
 	.stay-productive-om {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px; /* Adjust padding */
-        margin: 0 auto; /* Center the container */
-        overflow: hidden; /* Prevent overflow issues */
-				padding-bottom: 70px;
-    }
+		flex-direction: column;
+		text-align: center;
+		padding: 10px; /* Adjust padding */
+		margin: 0 auto; /* Center the container */
+		overflow: hidden; /* Prevent overflow issues */
+		padding-bottom: 70px;
+	}
 
-    .stay-productive-image-om {
-        flex: 1 1 auto;
-        max-width: 90%; /* Image width for mobile */
-        height: auto;
-        margin: 0 auto; /* Center the image */
-        padding: 0; /* Ensure no padding */
-        display: block; /* Ensure image is block-level */
-    }
+	.stay-productive-image-om {
+		flex: 1 1 auto;
+		max-width: 90%; /* Image width for mobile */
+		height: auto;
+		margin: 0 auto; /* Center the image */
+		padding: 0; /* Ensure no padding */
+		display: block; /* Ensure image is block-level */
+	}
 
-    .text-om {
-        max-width: 95%;
-        margin: 0 auto;
-        padding: 0;
-        text-align: center;
-    }
+	.text-om {
+		max-width: 95%;
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+	}
+	
+	.text-om > h2 {
+		margin: 0 auto 30px;
+		text-align: center;
+	}
 
-    .text-om > h2 {
-        margin: 0 auto 30px;
-        text-align: center;
-    }
-
-    .text-om > p {
-        margin: 0 auto;
-        text-align: center;
-    }
+	.text-om > p {
+		margin: 0 auto;
+		text-align: center;
+	}
 	.faq-container {
 		padding: 10px;
 	}
