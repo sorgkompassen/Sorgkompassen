@@ -165,7 +165,7 @@ main > *{
 	max-width: 600px;
 	width: 100%;
 	background-color: rgb(101, 128, 119, 0.6);
-	margin-left: 5%;
+	margin-left: 15%;
 }
 .content-tjanster > h2{
 	margin-bottom: 50px;
@@ -191,7 +191,7 @@ main > *{
 	max-width: 600px;
 	width: 100%;
 	background-color: rgb(101, 128, 119, 0.6);
-	margin-left: 5%;
+	margin-left: 15%;
 }
 .content-sorg > h2{
 	margin-bottom: 50px;
@@ -218,7 +218,7 @@ main > *{
 	max-width: 600px;
 	width: 100%;
 	background-color: rgb(75, 167, 184, 0.6);
-	margin-left: 5%;
+	margin-left: 15%;
 }
 .content-om > h2{
 	margin-bottom: 50px;
@@ -854,40 +854,38 @@ body, html {
 	}
 }
 
-.stay-productive-om{
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	padding: 20px;
-	box-sizing: border-box;
-	background-color: white;/*bakgrundfärg jag är anna*/
-	flex-wrap: wrap;
-	padding-bottom: 70px;
+.stay-productive-om {
+    display: flex;
+    flex-direction: row; /* Image and text side by side */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+		padding-bottom: 70px;
 }
-.stay-prodcutive-image-om{
-	flex: 0 0 auto;
-	max-width: 35%;
-	height: auto;
-	object-fit: contain;
+
+.stay-productive-image-om {
+    flex: 0 0 35%; /* Make the image take 35% of the width */
+    max-width: 35%;
+    height: auto;
+    object-fit: contain;
+    margin-right: 5%; /* Add some space between the image and text */
 }
-.stay-productive-om > .text-om{
-	flex: 0 0 50%;
-	max-width: 50%;
-	margin-left: 5%;
+
+.text-om {
+    flex: 0 0 50%; /* Text container takes 50% of the width */
+    max-width: 50%;
+    text-align: left; /* Align text to the left on larger screens */
 }
-.stay-productive-om > .text-om > h2{
-	margin-top: 20px;
+
+.text-om > h2 {
+    margin-bottom: 20px;
 }
-.stay-productive-om > .text-om > p{
-	font-weight: 100;
-}
-@media (max-width: 1000px){
-	.stay-productive-om{
-		grid-template-columns: repeat(3, 40vw);
-	}
-	.grid-options > article{
-		padding-right: 40px;
-	}
+
+.text-om > p {
+    font-weight: 100;
 }
 
 
@@ -1505,27 +1503,28 @@ footer > .social-icons a {
 		text-align: left;
 	}
 
-	.stay-productive-om{
-		flex-direction: column;
-		text-align: center;
-		align-items: center;
-		padding-bottom: 70px;
-	}
-	.stay-prodcutive-image-om{
-		flex: 1 1 100%;
-		max-width: 80%;
-		margin: 0;
-		padding: 0;
-	}
-	.text-om{
-		padding: 5px;
-		max-width: 90%;
-	}
-	.text-om > h2{
-		max-width: 90%;
-		text-align: center;
-		margin-right: 5px;
-	}
+	.stay-productive-om {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center;
+    }
+
+    .stay-productive-image-om {
+        flex: 1 1 100%;
+        max-width: 80%;
+				padding: 0px;
+        margin: 0 auto 20px; /* Add some margin below the image */
+    }
+
+    .text-om {
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .text-om > h2{
+        margin: 0 auto 30px;
+        text-align: center;
+    }
 
 	.faq-container {
 		padding: 10px;
