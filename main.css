@@ -1508,17 +1508,19 @@ footer > .social-icons a {
 	}
 
 	.stay-productive-om {
-        flex-direction: column; /* Stack image and text vertically */
+        flex-direction: column;
         text-align: center;
-        padding: 10px; /* Reduce padding for mobile */
+        padding: 10px; /* Adjust padding */
+        margin: 0 auto; /* Center the container */
+        overflow: hidden; /* Prevent overflow issues */
     }
 
     .stay-productive-image-om {
-        flex: 1 1 100%;
-        max-width: 90%; /* Image takes up 90% of width */
+        flex: 1 1 auto;
+        max-width: 90%; /* Image width for mobile */
         height: auto;
-        margin: 0 auto; /* Remove unnecessary margin */
-        padding: 0; /* Remove padding */
+        margin: 0 auto; /* Center the image */
+        padding: 0; /* Ensure no padding */
         display: block; /* Ensure image is block-level */
     }
 
@@ -1538,7 +1540,6 @@ footer > .social-icons a {
         margin: 0 auto;
         text-align: center;
     }
-
 	.faq-container {
 		padding: 10px;
 	}
@@ -1613,6 +1614,11 @@ footer > .social-icons a {
 		margin-right: 0;
 		margin-top: 0px;
 	}
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 @keyframes imageFlow{
