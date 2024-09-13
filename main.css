@@ -277,38 +277,41 @@ main > *{
 	width: 100%;
 	background-color: rgb(242, 237, 232);
 	margin: 0 auto;
-	padding-bottom: 50px; /* Add space below the section */
-	text-align: center;
+	padding-bottom: 50px;
 }
 
-.valkommen-sorg > h3 {
-	margin-bottom: 20px;
+.valkommen-sorg h3 {
+	margin-bottom: 0px;
+	text-align: left; /* Aligns the h3 to the left */
+	width: 70%; /* Keeps the h3 within the content width */
 }
 
-.valkommen-sorg > p {
+.valkommen-sorg p {
 	width: 70%;
 	margin-bottom: 20px;
-	text-align: left; /* Ensures the paragraphs are left-aligned */
+	text-align: left; /* Keeps paragraphs left-aligned */
 }
 
 .centered-list {
+	list-style-type: disc;
 	list-style-position: inside;
-	width: 70%; /* Centers the list block */
-	margin: 0 auto; /* Centers the list block */
-	text-align: left; /* Ensures the text inside the list is left-aligned */
-	padding-left: 0; /* Removes default padding */
+	width: 70%; /* Keeps the list width consistent */
+	margin: 0 auto;
+	text-align: left; /* Aligns the list and text inside to the left */
+	padding-left: 0; /* Removes extra padding */
 }
 
 .centered-list li {
-	margin-bottom: 10px;
-	text-align: left; /* Left-aligns each list item */
+	margin-bottom: 10px; /* Adds space between list items */
 }
 
-strong {
+.valkommen-sorg strong {
 	display: block;
-	margin-top: 20px; /* Adds spacing above the strong element */
+	text-align: left; /* Aligns the strong element to the left */
+	font-size: 1.2em;
+	margin-top: 20px;
+	width: 70%; /* Keeps it within the content width */
 }
-
 
 .valkommen-sorg-2 {
 	display: flex;
@@ -357,27 +360,6 @@ strong {
 }
 
 .custom-shape-divider-bottom-1721373953 .shape-fill {
-	fill: rgb(242, 237, 232);
-}
-
-.custom-shape-divider-bottom-1722952304-om {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	overflow: hidden;
-	line-height: 0;
-	transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1722952304-om svg {
-	position: relative;
-	display: block;
-	width: calc(106% + 1.3px);
-	height: 96px;
-}
-
-.custom-shape-divider-bottom-1722952304-om .shape-fill {
 	fill: rgb(242, 237, 232);
 }
 
@@ -823,6 +805,9 @@ body, html {
 		padding-right: 40px;
 	}
 }
+.stay-productive > .text > p > strong {
+	font-size: 1.3em;
+}
 
 .stay-productive-sorg{
 	display: flex;
@@ -1148,6 +1133,9 @@ footer > .social-icons a {
 .footer-btn:hover {
 	color: rgb(0, 123, 203); /* Color on hover */
 }
+.column a[href^="mailto:"] {
+	color: rgb(75, 167, 184);
+}
 
 @media only screen and (max-width: 700px){
 	body{
@@ -1412,6 +1400,16 @@ footer > .social-icons a {
 		margin-bottom: 0px;
 	}
 
+	.valkommen-sorg > strong {
+		font-weight: 100;/* Adds spacing above the strong element */
+	}
+	.centered-list{
+		width: 90%;
+		margin: 0px;
+		padding: 10px;
+		text-align: left;
+	}
+
 	.valkommen-sorg-2 > h3{
 		width: 90%;
 	}
@@ -1518,7 +1516,7 @@ footer > .social-icons a {
 
 	.stay-productive-image-om {
 		flex: 1 1 auto;
-		max-width: 90%; /* Image width for mobile */
+		max-width: 80%; /* Image width for mobile */
 		height: auto;
 		margin: 0 auto; /* Center the image */
 		padding: 0; /* Ensure no padding */
@@ -1531,10 +1529,11 @@ footer > .social-icons a {
 		padding: 0;
 		text-align: center;
 	}
-	
+
 	.text-om > h2 {
 		margin: 0 auto 30px;
 		text-align: center;
+		padding-top: 20px;
 	}
 
 	.text-om > p {
