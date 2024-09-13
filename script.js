@@ -30,10 +30,10 @@ document.addEventListener('DOMContentLoaded', function() {
     })
     .then(function(response) {
       console.log('Success:', response);
-      alert('Email sent successfully!');
+      alert('Hej och tack för att du har valt att skriva upp dig på mitt nyhetsbrev!');
     }, function(error) {
       console.log('Failed:', error);
-      alert('Failed to send email.');
+      alert('Misslyckades tyvärr att skriva upp dig för nyhetsbrev, försök igen lite senare');
     });
   });
 });
@@ -56,10 +56,10 @@ document.addEventListener('DOMContentLoaded', function() {
     })
     .then(function(response) {
       console.log('Success:', response);
-      alert('Email sent successfully!');
+      alert('Hej och tack för att du skickat ett meddelande till mig, jag kommer svara så snabbt som möjligt');
     }, function(error) {
       console.log('Failed:', error);
-      alert('Failed to send email.');
+      alert('Misslyckades tyvärr att skicka meddelande, försök igen lite senare');
     });
   });
 });
