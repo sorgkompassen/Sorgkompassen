@@ -111,7 +111,7 @@ main > *{
 
 .get-started{
 	height: 800px;
-	background-image: url(/images/first.jpg);
+	background-image: url(images/first.jpg);
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -150,7 +150,7 @@ main > *{
 
 .get-started-tjanster{
 	height: 800px;
-	background-image: url(/images/Tjanst.jpg);
+	background-image: url(images/Tjanst.jpg);
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -176,7 +176,7 @@ main > *{
 
 .get-started-sorg{
 	height: 800px;
-	background-image: url(/images/Sorg.jpg);
+	background-image: url(images/Sorg.jpg);
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -203,7 +203,7 @@ main > *{
 
 .get-started-om{
 	height: 800px;
-	background-image: url(/images/Om.png);
+	background-image: url(images/Om.png);
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -262,7 +262,7 @@ main > *{
 	text-align: center;
 	margin: 0 auto;
 }
-.valkommen > h3 {
+.valkommen > h2 {
 	margin-bottom: 20px;
 }
 .valkommen > p {
@@ -324,7 +324,7 @@ main > *{
 	text-align: center;
 	margin: 0 auto;
 }
-.valkommen-sorg-2 > h3 {
+.valkommen-sorg-2 > h2 {
 	margin-bottom: 20px;
 }
 .valkommen-sorg-2 > p {
@@ -980,7 +980,7 @@ body, html {
 	z-index: 10;
 	height: auto;
 	width: 70%;
-	background-image: url(/images/Nyhet.png);
+	background-image: url(images/Nyhet.png);
 	margin: 200px auto 100px;
 	padding: 20px;
 	border-radius: 7px;
@@ -1283,7 +1283,7 @@ footer > .social-icons a {
 		margin-bottom: 0px;
 		text-align: left;
 	}
-	.grid-articles > article > h3{
+	.grid-articles > article > h2{
 		font-size: 1.3em;
 		font-weight: 100;
 		width: 100%;
@@ -1376,7 +1376,7 @@ footer > .social-icons a {
 		width: auto;
 		margin: 0;
 	}
-	.grid-options > article > h3{
+	.grid-options > article > h2{
 		font-size: 1.3em;
 		font-weight: 100;
 		margin: 0 auto;
@@ -1421,7 +1421,7 @@ footer > .social-icons a {
 		margin: 0px;
 		text-align: center;
 	}
-	.valkommen-sorg-2 > h3{
+	.valkommen-sorg-2 > h2{
 		width: 90%;
 		text-align: center;
 	}
