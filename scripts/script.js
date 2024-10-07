@@ -1,18 +1,23 @@
 window.addEventListener('scroll', function () {
   var logoContainer = document.getElementById('logo-container');
-
-
 });
 
 var prevScrollPos = window.pageYOffset;
-
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-
-
-
   prevScrollPos = currentScrollPos;
 };
+
+// Toggle the dropdown content in mobile view only when clicking the arrow
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdown = document.querySelector('.dropdown');
+  const dropdownArrow = document.querySelector('.dropdown-arrow');
+
+  dropdownArrow.addEventListener('click', function() {
+    // Toggle the active class to show/hide dropdown
+    dropdown.classList.toggle('active');
+  });
+});
 
 document.addEventListener('DOMContentLoaded', function() {
   emailjs.init("XvCtnf9vApVHPljdT"); // Replace with your actual API key
@@ -41,9 +46,16 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
   emailjs.init("XvCtnf9vApVHPljdT"); // Replace with your actual API key
 
-  document.getElementById('send-button-kontakt').addEventListener('click', function() {
+  document.getElementById('send-button-kontakt').addEventListener('click', function(event) {
     // Prevent default form submission
     event.preventDefault();
+
+    // Check if the checkbox is checked
+    const checkbox = document.getElementById('privacy-policy');
+    if (!checkbox.checked) {
+      alert('Du måste godkänna lagring av uppgifter enligt integritetspolicyn för att kunna skicka meddelandet.');
+      return; // Stop form submission if checkbox is not checked
+    }
 
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
