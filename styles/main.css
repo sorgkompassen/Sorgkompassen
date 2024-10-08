@@ -576,6 +576,15 @@ body, html {
 	height: 100px; /* Set a height for the message textarea */
 	resize: vertical; /* Allow vertical resizing only */
 }
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds a little space between the checkbox and the text */
+}
+.checkbox-label input[type="checkbox"] {
+  margin: 0; /* Removes extra margin on checkbox */
+}
+
 .early-btn-kontakt {
 	margin-top: 10px;
 	display: inline-block;
