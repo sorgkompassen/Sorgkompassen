@@ -1,3 +1,24 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("popup");
+    const closeBtn = document.getElementById("closeBtn");
+
+    // Show the popup when the page loads
+    popup.classList.add("show");
+
+    // Close the popup when the close button is clicked
+    closeBtn.addEventListener("click", function () {
+        popup.classList.remove("show");
+    });
+
+    // Optional: Close the popup when clicking outside of it
+    window.addEventListener("click", function (event) {
+        if (event.target === popup) {
+            popup.classList.remove("show");
+        }
+    });
+});
+
+
 window.addEventListener('scroll', function () {
   var logoContainer = document.getElementById('logo-container');
 });
