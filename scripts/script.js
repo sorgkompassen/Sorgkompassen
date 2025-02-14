@@ -41,28 +41,34 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  emailjs.init("XvCtnf9vApVHPljdT"); // Replace with your actual API key
+    emailjs.init("XvCtnf9vApVHPljdT"); // Replace with your actual API key
 
-  document.getElementById('send-button').addEventListener('click', function() {
-    // Prevent default form submission
-    event.preventDefault();
+    document.getElementById('send-button').addEventListener('click', function(event) {
+        event.preventDefault();
 
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const consentChecked = document.getElementById('consent').checked;
 
-    emailjs.send("service_kaxyek7", "template_8qdhbsg", {
-      from_name: name,
-      from_email: email
-    })
-    .then(function(response) {
-      console.log('Success:', response);
-      alert('Hej och tack för att du har valt att skriva upp dig på mitt nyhetsbrev!');
-    }, function(error) {
-      console.log('Failed:', error);
-      alert('Misslyckades tyvärr att skriva upp dig för nyhetsbrev, försök igen lite senare');
+        if (!name || !email || !consentChecked) {
+            alert('Vänligen fyll i alla fält och godkänn villkoren.');
+            return;
+        }
+
+        emailjs.send("service_kaxyek7", "template_8qdhbsg", {
+            from_name: name,
+            from_email: email
+        })
+        .then(function(response) {
+            console.log('Success:', response);
+            alert('Hej och tack för att du har valt att skriva upp dig på mitt nyhetsbrev!');
+        }, function(error) {
+            console.log('Failed:', error);
+            alert('Misslyckades tyvärr att skriva upp dig för nyhetsbrev, försök igen lite senare');
+        });
     });
-  });
 });
+
 
 document.addEventListener('DOMContentLoaded', function() {
   emailjs.init("XvCtnf9vApVHPljdT"); // Replace with your actual API key
