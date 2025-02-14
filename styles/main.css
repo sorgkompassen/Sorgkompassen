@@ -1121,6 +1121,7 @@ body, html {
 	border-radius: 20px;
 	text-decoration: none;
 	font-size: 1em;
+	margin-top: 20px;
 }
 .early-btn:hover {
 	color: rgb(252, 252, 252); /* Color on hover */
