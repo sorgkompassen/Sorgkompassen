@@ -1074,6 +1074,10 @@ body, html {
 	}
 }
 
+#nyhet {
+    scroll-margin-top: 200px; /* Justera detta värde efter behov */
+}
+
 .early-access-card{
 	position: relative;
 	z-index: 10;
