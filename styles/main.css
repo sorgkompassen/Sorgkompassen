@@ -1734,6 +1734,10 @@ footer > .social-icons a {
 		margin: 15px auto;
 	}
 
+	#nyhet {
+	    scroll-margin-top: 50px; /* Justera detta värde efter behov */
+	}
+
 	.early-access-card > *{
 		margin: 10px auto;
 		padding: 0;
