@@ -28,8 +28,9 @@ body{
     position: relative;
     background: white;
     padding: 50px;
-		margin: 10px;
+	margin: 10px;
     border-radius: 15px;
+	background-color: rgb(242, 237, 232); /* Background color */
     max-width: 600px;
     width: 90%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
