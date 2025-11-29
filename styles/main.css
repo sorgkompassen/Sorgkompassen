@@ -348,7 +348,7 @@ main > *{
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	background-color: rgb(242, 237, 232);
+	background-color: white;
 	padding: 20px;
 	text-align: center;
 	margin: 0 auto;
@@ -472,7 +472,7 @@ main > *{
 }
 
 .custom-shape-divider-bottom-1721373953 .shape-fill {
-	fill: white;
+	fill: rgb(242, 237, 232);
 }
 
 .custom-shape-divider-bottom-1762530486 {
@@ -1023,6 +1023,7 @@ body, html {
 	box-sizing: border-box;
 	background-color: white; /* Background color */
 	flex-wrap: wrap;
+	margin-bottom: 200px;
 }
 .stay-productive-image2 {
 	flex: 0 0 auto;
@@ -1834,6 +1835,7 @@ footer > .social-icons a {
 		flex-direction: column;
 		text-align: center;
 		align-items: center;
+		margin-bottom: 0px;
 	}
 	.stay-productive-image2 {
 		flex: 1 1 auto;
