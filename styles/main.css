@@ -373,8 +373,10 @@ main > *{
 	background-color: white;
 	padding: 20px;
 	text-align: center;
-		width: 65%;
+	width: 50%;
 	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 100px;
 }
 .valkommen2 > h2 {
 	margin-bottom: 20px;
@@ -391,7 +393,8 @@ main > *{
 	width: 100%;
 	background-color: rgb(242, 237, 232);
 	margin: 0 auto;
-	padding-bottom: 50px;
+	padding-top: 50px;
+	padding-bottom: 100px;
 }
 
 .valkommen-sorg h3 {
@@ -437,6 +440,7 @@ main > *{
 	padding: 20px;
 	text-align: center;
 	margin: 0 auto;
+	padding-top: 50px;
 }
 .valkommen-sorg-2 > h2 {
 	margin-bottom: 20px;
@@ -588,6 +592,7 @@ body, html {
 .container-grid-articles-om{
 	background-color: rgb(242, 237, 232);
 	margin-top: -30px;
+	padding-bottom: 100px;
 }
 .container-grid-articles-om > h2{
 	margin-bottom: 20px;
@@ -596,6 +601,7 @@ body, html {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	padding-top: 50px;
 }
 
 .grid-articles-om{
@@ -633,7 +639,7 @@ body, html {
 	justify-content: center;
 	padding: 20px;
 	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-bottom: 0px;
 }
 .container-grid-articles-kontakt > h2{
 	margin-bottom: 20px;
@@ -735,6 +741,7 @@ body, html {
 	align-items: center;
 	justify-content: center;
 	row-gap: 0;
+	padding-top: 50px;
 }
 .grid-options > article {
 	margin-top: 50px;
@@ -752,14 +759,14 @@ body, html {
 	}
 }
 .grid-options > article > img{
-	height: 7rem;
+	height: 8rem;
 	width: auto;
 }
 .button-container {
 	text-align: center; /* Centers the button horizontally */
 	position: relative; /* Allows z-index to take effect */
 	z-index: 10;
-	padding-bottom: 50px;
+	padding-bottom: 100px;
 }
 .centered-button {
 	display: inline-block;
@@ -780,6 +787,7 @@ body, html {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	padding-top: 50px;
 }
 .grid-options-tjanser-2{
 	position: relative;
@@ -790,6 +798,7 @@ body, html {
 	align-items: center;
 	justify-content: center;
 	row-gap: 0;
+	padding-bottom: 100px;
 }
 .grid-options-tjanser-2 > article {
 	margin-top: 50px;
@@ -817,6 +826,7 @@ body, html {
 	align-items: center;
 	justify-content: center;
 	row-gap: 0;
+	padding-top: 50px;
 }
 .grid-options-tjanster > article {
 	margin-top: 50px;
@@ -834,7 +844,7 @@ body, html {
 	}
 }
 .grid-options-tjanster > article > img{
-	height: 7rem;
+	height: 8rem;
 	width: auto;
 }
 .h3-link {
@@ -905,6 +915,8 @@ body, html {
 	box-sizing: border-box;
 	background-color: rgb(242, 237, 232); /* Background color */
 	flex-wrap: wrap;
+	padding-top: 50px;
+	padding-bottom: 100px;
 }
 .stay-productive-image {
 	flex: 0 0 auto;
@@ -959,8 +971,8 @@ body, html {
 	justify-content: center;
 	text-align: center;
 	padding: 20px;
-	padding-top: 40px;
-	padding-bottom: 60px;
+	padding-top: 80px;
+	padding-bottom: 160px;
 	box-sizing: border-box;
 	background-color: white;/*bakgrundfärg jag är anna*/
 	flex-wrap: wrap;
@@ -988,7 +1000,8 @@ body, html {
 	padding: 20px;
 	box-sizing: border-box;
 	background-color: white;
-	padding-bottom: 70px;
+	padding-top: 50px;
+	padding-bottom: 100px;
 }
 
 .stay-productive-image-om {
@@ -1026,7 +1039,7 @@ body, html {
 	box-sizing: border-box;
 	background-color: white; /* Background color */
 	flex-wrap: wrap;
-	margin-bottom: 200px;
+	margin-bottom: 150px;
 }
 .stay-productive-image2 {
 	flex: 0 0 auto;
@@ -1083,6 +1096,7 @@ body, html {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 20px;
+	padding-top: 50px;
 }
 .faq-section > h2{
 	text-align: center;
@@ -1141,15 +1155,17 @@ body, html {
 	margin: 100px auto;
 	text-align: left;
 	align-items: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 .quotes > .container{
 	height: auto;
-	width: 33%;
+	width: 25%;
 	background: rgb(237, 232, 229);/*bakgrundfärg quotes*/
-	margin: auto 15px;
+	margin: auto 3%;
 	padding: 20px;
 	border-radius: 7px;
-	box-shadow: 10px 7px hsl(218, 28%, 14%);
+	/*box-shadow: 10px 7px hsl(218, 28%, 14%);*/
 }
 .quotes > .container > div{
 	display: flex;
@@ -1681,6 +1697,7 @@ footer > .social-icons a {
 		padding: 0px;
 		margin: 0px;
 		text-align: center;
+		padding-top: 50px;
 	}
 	.valkommen-sorg-2 > h2{
 		width: 90%;
@@ -1776,8 +1793,8 @@ footer > .social-icons a {
 		text-align: center;
 		align-items: center;
 		padding: 0px;
-		padding-top: 20px;
-		padding-bottom: 70px;
+		padding-top: 50px;
+		padding-bottom: 100px;
 		width: 100%;
 	}
 	.stay-productive-image-sorg{
@@ -1803,7 +1820,8 @@ footer > .social-icons a {
 		padding: 10px; /* Adjust padding */
 		margin: 0 auto; /* Center the container */
 		overflow: hidden; /* Prevent overflow issues */
-		padding-bottom: 70px;
+		padding-bottom: 100px;
+		padding-top: 50px;
 	}
 
 	.stay-productive-image-om {
@@ -1871,6 +1889,8 @@ footer > .social-icons a {
 	.quotes{
 		flex-direction: column;
 		text-align: left;
+		margin-bottom: 0px;
+		margin-top: 0px;
 	}
 	.quotes > img{
 		margin-top: -20px;
