@@ -1095,6 +1095,25 @@ body, html {
 .stay-productive2 > .text > p > strong {
 	font-size: 1.3em;
 }
+.image-grid {
+	display: flex;
+	justify-content: space-between;
+	gap: 0px;
+	width: 80%;
+	margin-top: 50px;
+}
+.image-grid a {
+	flex: 1;
+}
+.image-grid img {
+	width: 70%;
+	height: auto;
+	border-radius: 8px;
+	transition: transform 0.3s ease;
+}
+.image-grid img:hover {
+	transform: scale(1.05);
+}
 
 
 .faq-section {
@@ -1275,25 +1294,6 @@ body, html {
 .insta:hover {
 	color: darkgray; /* Optional: color change on hover */
 }
-
-.image-grid {
-	display: flex;
-	justify-content: space-between;
-	gap: 20px;
-}
-.image-grid a {
-	flex: 1;
-}
-.image-grid img {
-	width: 80%;
-	height: auto;
-	border-radius: 8px;
-	transition: transform 0.3s ease;
-}
-.image-grid img:hover {
-	transform: scale(1.05);
-}
-
 
 footer{
 	z-index: 1;
@@ -1939,6 +1939,7 @@ footer > .social-icons a {
 	.image-grid {
 		flex-direction: column;
 		gap: 15px;
+		width: 100%;
 	}
 
 	footer {
