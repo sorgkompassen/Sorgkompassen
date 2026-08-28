@@ -342,6 +342,58 @@ main > *{
 	margin-bottom: 10px;
 }
 
+.grupparbete {
+    background-color: rgb(242, 237, 232);
+    padding: 70px 20px 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.grupparbete-innehall {
+    max-width: 750px;
+    width: 50%;
+}
+
+.grupparbete h2 {
+    margin-bottom: 25px;
+    line-height: 1.3;
+}
+
+.grupparbete p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+.grupparbete-praktiskt {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto 25px auto !important;
+    line-height: 2;
+}
+
+.grupparbete h3 {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.grupparbete-info {
+    margin-top: 30px;
+    margin-bottom: 35px !important;
+}
+
+.grupparbete-knapp {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: rgb(35, 129, 147);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.grupparbete-knapp:hover {
+    color:rgb(252, 252, 252);
+}
+
 .valkommen {
 	display: flex;
 	flex-direction: column;
@@ -1659,6 +1711,11 @@ footer > .social-icons a {
 		width: 90%;
 		height: auto;
 		padding-bottom: 50px;
+	}
+
+	.grupparbete-innehall{
+		margin-bottom: 0px;
+		width: 90%;
 	}
 
 	.valkommen{
